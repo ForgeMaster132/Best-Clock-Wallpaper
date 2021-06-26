@@ -1,13 +1,15 @@
 // Getting new color values function
 function newColors(){
+// Getting RGB values at random with function call    
+let newColor = getRandomInt(1, 255);
+return newColor;
+}
+
+// Random Int function
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-// Getting RGB values at random with function call    
-let newColor = getRandomInt(1, 255);
-return newColor;
 }
 
 // Find Difference between colors
