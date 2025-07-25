@@ -1,7 +1,16 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Calibri", sans-serif;
+    transition: background-color 1s linear;
+}
+
 #clock {
-    position: absolute;
-    top: 40%;
-    left: 33vw;
-    font-size: 10vw;
-    font-family: calibri;
-  }
+    font-size: clamp(2rem, 20vw, 10rem);
+}
